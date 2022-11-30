@@ -22,52 +22,10 @@
 							"id": "http-missing-security-headers",
 							"name": "HTTP Missing Security Headers",
 							"shortDescription": {
-								"text": "[Nuclei:info] HTTP Missing Security Headers"
+								"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 							},
 							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml\n"
-							},
-							"properties": {
-								"security-severity": "1",
-								"tags": [
-									"security"
-								]
-							}
-						},
-						{
-							"id": "mismatched-ssl",
-							"name": "Mismatched SSL Certificate",
-							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/mismatched-ssl.yaml\n"
-							},
-							"properties": {
-								"security-severity": "2",
-								"tags": [
-									"security"
-								]
-							}
-						},
-						{
-							"id": "nameserver-fingerprint",
-							"name": "NS Record Detection",
-							"shortDescription": {
-								"text": "[Nuclei:info] NS Record Detection"
-							},
-							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/dns/nameserver-fingerprint.yaml\n"
-							},
-							"properties": {
-								"security-severity": "1",
-								"tags": [
-									"security"
-								]
-							}
-						},
-						{
-							"id": "ssl-issuer",
-							"name": "Detect SSL Certificate Issuer",
-							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/detect-ssl-issuer.yaml\n"
+								"text": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml\n"
 							},
 							"properties": {
 								"security-severity": "1",
@@ -80,26 +38,13 @@
 							"id": "deprecated-tls",
 							"name": "Deprecated TLS Detection (TLS 1.1 or SSLv3)",
 							"shortDescription": {
-								"text": "[Nuclei:info] Deprecated TLS Detection (TLS 1.1 or SSLv3)"
+								"text": "Deprecated TLS Detection (TLS 1.1 or SSLv3) (deprecated-tls) found on scanme.sh"
 							},
 							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/deprecated-tls.yaml\n"
+								"text": "Both TLS 1.1 and SSLv3 are deprecated in favor of stronger encryption.\n\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/deprecated-tls.yaml\n"
 							},
 							"properties": {
 								"security-severity": "1",
-								"tags": [
-									"security"
-								]
-							}
-						},
-						{
-							"id": "self-signed-ssl",
-							"name": "Self Signed SSL Certificate",
-							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/self-signed-ssl.yaml\n"
-							},
-							"properties": {
-								"security-severity": "2",
 								"tags": [
 									"security"
 								]
@@ -109,7 +54,7 @@
 							"id": "tls-version",
 							"name": "TLS Version",
 							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml\n"
+								"text": "\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml\n"
 							},
 							"properties": {
 								"security-severity": "1",
@@ -119,10 +64,26 @@
 							}
 						},
 						{
-							"id": "robots-txt-endpoint",
-							"name": "robots.txt endpoint prober",
+							"id": "mismatched-ssl",
+							"name": "Mismatched SSL Certificate",
 							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/robots-txt-endpoint.yaml\n"
+								"text": "\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/mismatched-ssl.yaml\n"
+							},
+							"properties": {
+								"security-severity": "2",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "nameserver-fingerprint",
+							"name": "NS Record Detection",
+							"shortDescription": {
+								"text": "NS Record Detection (nameserver-fingerprint) found on scanme.sh"
+							},
+							"fullDescription": {
+								"text": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/dns/nameserver-fingerprint.yaml\n"
 							},
 							"properties": {
 								"security-severity": "1",
@@ -135,10 +96,49 @@
 							"id": "openssh-detect",
 							"name": "OpenSSH Service Detection",
 							"shortDescription": {
-								"text": "[Nuclei:info] OpenSSH Service Detection"
+								"text": "OpenSSH Service Detection (openssh-detect) found on scanme.sh:443"
 							},
 							"fullDescription": {
-								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/network/detection/openssh-detect.yaml\n"
+								"text": "OpenSSH is the premier connectivity tool for remote login with the SSH protocol. It encrypts all traffic to eliminate eavesdropping, connection hijacking, and other attacks. In addition, OpenSSH provides a large suite of secure tunneling capabilities, several authentication methods, and sophisticated configuration options.\n\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/network/detection/openssh-detect.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "self-signed-ssl",
+							"name": "Self Signed SSL Certificate",
+							"fullDescription": {
+								"text": "\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/self-signed-ssl.yaml\n"
+							},
+							"properties": {
+								"security-severity": "2",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "robots-txt-endpoint",
+							"name": "robots.txt endpoint prober",
+							"fullDescription": {
+								"text": "\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/robots-txt-endpoint.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "ssl-issuer",
+							"name": "Detect SSL Certificate Issuer",
+							"fullDescription": {
+								"text": "\nMore details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/detect-ssl-issuer.yaml\n"
 							},
 							"properties": {
 								"security-severity": "1",
@@ -161,7 +161,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -197,7 +197,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -233,7 +233,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -269,7 +269,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -305,7 +305,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -341,7 +341,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -377,7 +377,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -413,7 +413,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -449,7 +449,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -485,7 +485,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -521,7 +521,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -557,7 +557,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -593,7 +593,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -629,7 +629,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -665,7 +665,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -701,7 +701,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -737,7 +737,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] HTTP Missing Security Headers"
+						"text": "HTTP Missing Security Headers (http-missing-security-headers) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -764,87 +764,15 @@
 					]
 				},
 				{
-					"ruleId": "mismatched-ssl",
+					"ruleId": "deprecated-tls",
 					"rule": {
-						"id": "mismatched-ssl",
-						"toolComponent": {}
-					},
-					"level": "note",
-					"kind": "open",
-					"message": {
-						"text": "[Nuclei:low] Mismatched SSL Certificate"
-					},
-					"analysisTarget": {},
-					"webRequest": {
-						"body": {}
-					},
-					"webResponse": {
-						"body": {}
-					},
-					"locations": [
-						{
-							"message": {
-								"text": "scanme.sh"
-							},
-							"physicalLocation": {
-								"address": {},
-								"artifactLocation": {
-									"uri": "/",
-									"description": {
-										"text": "scanme.sh"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"ruleId": "nameserver-fingerprint",
-					"ruleIndex": 1,
-					"rule": {
-						"id": "nameserver-fingerprint",
+						"id": "deprecated-tls",
 						"toolComponent": {}
 					},
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] NS Record Detection"
-					},
-					"analysisTarget": {},
-					"webRequest": {
-						"body": {}
-					},
-					"webResponse": {
-						"body": {}
-					},
-					"locations": [
-						{
-							"message": {
-								"text": "scanme.sh"
-							},
-							"physicalLocation": {
-								"address": {},
-								"artifactLocation": {
-									"uri": "/",
-									"description": {
-										"text": "scanme.sh"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"ruleId": "ssl-issuer",
-					"ruleIndex": 2,
-					"rule": {
-						"id": "ssl-issuer",
-						"toolComponent": {}
-					},
-					"level": "none",
-					"kind": "open",
-					"message": {
-						"text": "[Nuclei:info] Detect SSL Certificate Issuer"
+						"text": "Deprecated TLS Detection (TLS 1.1 or SSLv3) (deprecated-tls) found on scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -872,7 +800,6 @@
 				},
 				{
 					"ruleId": "deprecated-tls",
-					"ruleIndex": 3,
 					"rule": {
 						"id": "deprecated-tls",
 						"toolComponent": {}
@@ -880,79 +807,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] Deprecated TLS Detection (TLS 1.1 or SSLv3)"
-					},
-					"analysisTarget": {},
-					"webRequest": {
-						"body": {}
-					},
-					"webResponse": {
-						"body": {}
-					},
-					"locations": [
-						{
-							"message": {
-								"text": "scanme.sh"
-							},
-							"physicalLocation": {
-								"address": {},
-								"artifactLocation": {
-									"uri": "/",
-									"description": {
-										"text": "scanme.sh"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"ruleId": "deprecated-tls",
-					"ruleIndex": 3,
-					"rule": {
-						"id": "deprecated-tls",
-						"toolComponent": {}
-					},
-					"level": "none",
-					"kind": "open",
-					"message": {
-						"text": "[Nuclei:info] Deprecated TLS Detection (TLS 1.1 or SSLv3)"
-					},
-					"analysisTarget": {},
-					"webRequest": {
-						"body": {}
-					},
-					"webResponse": {
-						"body": {}
-					},
-					"locations": [
-						{
-							"message": {
-								"text": "scanme.sh"
-							},
-							"physicalLocation": {
-								"address": {},
-								"artifactLocation": {
-									"uri": "/",
-									"description": {
-										"text": "scanme.sh"
-									}
-								}
-							}
-						}
-					]
-				},
-				{
-					"ruleId": "self-signed-ssl",
-					"ruleIndex": 4,
-					"rule": {
-						"id": "self-signed-ssl",
-						"toolComponent": {}
-					},
-					"level": "note",
-					"kind": "open",
-					"message": {
-						"text": "[Nuclei:low] Self Signed SSL Certificate"
+						"text": "Deprecated TLS Detection (TLS 1.1 or SSLv3) (deprecated-tls) found on scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -980,7 +835,7 @@
 				},
 				{
 					"ruleId": "tls-version",
-					"ruleIndex": 5,
+					"ruleIndex": 1,
 					"rule": {
 						"id": "tls-version",
 						"toolComponent": {}
@@ -988,7 +843,151 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] TLS Version"
+						"text": "TLS Version (tls-version) found on scanme.sh"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "mismatched-ssl",
+					"ruleIndex": 2,
+					"rule": {
+						"id": "mismatched-ssl",
+						"toolComponent": {}
+					},
+					"level": "note",
+					"kind": "open",
+					"message": {
+						"text": "Mismatched SSL Certificate (mismatched-ssl) found on scanme.sh"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "nameserver-fingerprint",
+					"ruleIndex": 3,
+					"rule": {
+						"id": "nameserver-fingerprint",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "NS Record Detection (nameserver-fingerprint) found on scanme.sh"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "openssh-detect",
+					"ruleIndex": 4,
+					"rule": {
+						"id": "openssh-detect",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "OpenSSH Service Detection (openssh-detect) found on scanme.sh:443"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh:443"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh:443"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "self-signed-ssl",
+					"ruleIndex": 5,
+					"rule": {
+						"id": "self-signed-ssl",
+						"toolComponent": {}
+					},
+					"level": "note",
+					"kind": "open",
+					"message": {
+						"text": "Self Signed SSL Certificate (self-signed-ssl) found on scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -1024,7 +1023,7 @@
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] robots.txt endpoint prober"
+						"text": "robots.txt endpoint prober (robots-txt-endpoint) found on https://scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -1051,16 +1050,16 @@
 					]
 				},
 				{
-					"ruleId": "openssh-detect",
+					"ruleId": "ssl-issuer",
 					"ruleIndex": 7,
 					"rule": {
-						"id": "openssh-detect",
+						"id": "ssl-issuer",
 						"toolComponent": {}
 					},
 					"level": "none",
 					"kind": "open",
 					"message": {
-						"text": "[Nuclei:info] OpenSSH Service Detection"
+						"text": "Detect SSL Certificate Issuer (ssl-issuer) found on scanme.sh"
 					},
 					"analysisTarget": {},
 					"webRequest": {
@@ -1072,14 +1071,14 @@
 					"locations": [
 						{
 							"message": {
-								"text": "scanme.sh:443"
+								"text": "scanme.sh"
 							},
 							"physicalLocation": {
 								"address": {},
 								"artifactLocation": {
 									"uri": "/",
 									"description": {
-										"text": "scanme.sh:443"
+										"text": "scanme.sh"
 									}
 								}
 							}
@@ -1089,7 +1088,7 @@
 			],
 			"invocations": [
 				{
-					"commandLine": "/var/folders/fs/50l_djns0db4w30ttbd6czgr0000gn/T/go-build2086114729/b001/exe/nuclei",
+					"commandLine": "/var/folders/fs/50l_djns0db4w30ttbd6czgr0000gn/T/go-build771094593/b001/exe/nuclei",
 					"arguments": [
 						"-u",
 						"https://scanme.sh",
