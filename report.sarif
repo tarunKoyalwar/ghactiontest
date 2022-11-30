@@ -1,0 +1,1117 @@
+{
+	"version": "2.1.0",
+	"$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+	"runs": [
+		{
+			"tool": {
+				"driver": {
+					"name": "Nuclei",
+					"organization": "ProjectDiscovery",
+					"product": "Nuclei",
+					"shortDescription": {
+						"text": "Fast and Customizable Vulnerability Scanner"
+					},
+					"fullDescription": {
+						"text": "Fast and customizable vulnerability scanner based on simple YAML based DSL"
+					},
+					"fullName": "Nuclei v2.7.9",
+					"semanticVersion": "v2.7.9",
+					"downloadUri": "https://github.com/projectdiscovery/nuclei/releases",
+					"rules": [
+						{
+							"id": "http-missing-security-headers",
+							"name": "HTTP Missing Security Headers",
+							"shortDescription": {
+								"text": "[Nuclei:info] HTTP Missing Security Headers"
+							},
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "mismatched-ssl",
+							"name": "Mismatched SSL Certificate",
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/mismatched-ssl.yaml\n"
+							},
+							"properties": {
+								"security-severity": "2",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "nameserver-fingerprint",
+							"name": "NS Record Detection",
+							"shortDescription": {
+								"text": "[Nuclei:info] NS Record Detection"
+							},
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/dns/nameserver-fingerprint.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "ssl-issuer",
+							"name": "Detect SSL Certificate Issuer",
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/detect-ssl-issuer.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "deprecated-tls",
+							"name": "Deprecated TLS Detection (TLS 1.1 or SSLv3)",
+							"shortDescription": {
+								"text": "[Nuclei:info] Deprecated TLS Detection (TLS 1.1 or SSLv3)"
+							},
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/deprecated-tls.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "self-signed-ssl",
+							"name": "Self Signed SSL Certificate",
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/self-signed-ssl.yaml\n"
+							},
+							"properties": {
+								"security-severity": "2",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "tls-version",
+							"name": "TLS Version",
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "robots-txt-endpoint",
+							"name": "robots.txt endpoint prober",
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/robots-txt-endpoint.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						},
+						{
+							"id": "openssh-detect",
+							"name": "OpenSSH Service Detection",
+							"shortDescription": {
+								"text": "[Nuclei:info] OpenSSH Service Detection"
+							},
+							"fullDescription": {
+								"text": "More details at\nhttps://github.com/projectdiscovery/nuclei-templates/blob/master/network/detection/openssh-detect.yaml\n"
+							},
+							"properties": {
+								"security-severity": "1",
+								"tags": [
+									"security"
+								]
+							}
+						}
+					]
+				}
+			},
+			"results": [
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "http-missing-security-headers",
+					"ruleIndex": -1,
+					"rule": {
+						"id": "http-missing-security-headers",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] HTTP Missing Security Headers"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "mismatched-ssl",
+					"rule": {
+						"id": "mismatched-ssl",
+						"toolComponent": {}
+					},
+					"level": "note",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:low] Mismatched SSL Certificate"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "nameserver-fingerprint",
+					"ruleIndex": 1,
+					"rule": {
+						"id": "nameserver-fingerprint",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] NS Record Detection"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "ssl-issuer",
+					"ruleIndex": 2,
+					"rule": {
+						"id": "ssl-issuer",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] Detect SSL Certificate Issuer"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "deprecated-tls",
+					"ruleIndex": 3,
+					"rule": {
+						"id": "deprecated-tls",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] Deprecated TLS Detection (TLS 1.1 or SSLv3)"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "deprecated-tls",
+					"ruleIndex": 3,
+					"rule": {
+						"id": "deprecated-tls",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] Deprecated TLS Detection (TLS 1.1 or SSLv3)"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "self-signed-ssl",
+					"ruleIndex": 4,
+					"rule": {
+						"id": "self-signed-ssl",
+						"toolComponent": {}
+					},
+					"level": "note",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:low] Self Signed SSL Certificate"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "tls-version",
+					"ruleIndex": 5,
+					"rule": {
+						"id": "tls-version",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] TLS Version"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "robots-txt-endpoint",
+					"ruleIndex": 6,
+					"rule": {
+						"id": "robots-txt-endpoint",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] robots.txt endpoint prober"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "https:/scanme.sh"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "https:/scanme.sh"
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ruleId": "openssh-detect",
+					"ruleIndex": 7,
+					"rule": {
+						"id": "openssh-detect",
+						"toolComponent": {}
+					},
+					"level": "none",
+					"kind": "open",
+					"message": {
+						"text": "[Nuclei:info] OpenSSH Service Detection"
+					},
+					"analysisTarget": {},
+					"webRequest": {
+						"body": {}
+					},
+					"webResponse": {
+						"body": {}
+					},
+					"locations": [
+						{
+							"message": {
+								"text": "scanme.sh:443"
+							},
+							"physicalLocation": {
+								"address": {},
+								"artifactLocation": {
+									"uri": "/",
+									"description": {
+										"text": "scanme.sh:443"
+									}
+								}
+							}
+						}
+					]
+				}
+			],
+			"invocations": [
+				{
+					"commandLine": "/var/folders/fs/50l_djns0db4w30ttbd6czgr0000gn/T/go-build2086114729/b001/exe/nuclei",
+					"arguments": [
+						"-u",
+						"https://scanme.sh",
+						"-se",
+						"report.sarif"
+					],
+					"responseFiles": [
+						{
+							"uri": "file:///report.sarif",
+							"description": {
+								"text": "Nuclei Sarif Report"
+							}
+						}
+					],
+					"executionSuccessful": false,
+					"executableLocation": {},
+					"workingDirectory": {},
+					"stdin": {},
+					"stdout": {},
+					"stderr": {}
+				}
+			]
+		}
+	]
+}
